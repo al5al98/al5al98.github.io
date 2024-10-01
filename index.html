@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>al5al1h</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="style1.css" rel="stylesheet">
+    <link href="side.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoplay Audio with Volume Control</title>
+    <style>
+        .audio-container {
+            animation: fade-in-out 10s ease-in-out forwards;
+        }
+
+        @keyframes fade-in-out {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="vid/4K Planet Earth Spinning in Space ｜ Free HD Videos - No Copyright.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="overlay-text">
+            <h1>تعريف عني</h1>
+        </div>
+
+        <div class="container"></div>
+
+        <div style="text-align: center;"></div>
+
+        <div class="logo-container">
+            <img src="img/me2.JPG" alt="شعار الموقع" class="logo">
+        </div>
+
+        <div class="audio">
+            <!-- عنصر الصوت مع التحكم في التشغيل التلقائي -->
+            <audio id="myAudio" autoplay controls>
+                <source src="بعيد.mp3" type="audio/mpeg">
+                متصفحك لا يدعم تشغيل الصوت.
+            </audio>
+
+            <!-- إضافة JavaScript في نهاية الصفحة -->
+            <script>
+                // الوصول إلى عنصر الصوت
+                var audioElement = document.getElementById('myAudio');
+                var volumeControl = document.getElementById('volumeControl');
+
+                // ضبط مستوى الصوت إلى القيمة الافتراضية (0.5)
+                audioElement.volume = 0.02;
+
+                // تغيير مستوى الصوت بناءً على شريط التحكم
+                volumeControl.addEventListener('input', function () {
+                    audioElement.volume = volumeControl.value;
+                });
+            </script>
+        </div>
+
+        <div class="main-div">
+            <div class="sub-div">
+                <p style="color: #ffffff;"> أنا ياسر من سوريا</p>
+                <p style="color: #ffffff;"> اعيش في فرنسا</p>
+                <p style="color: #ffffff;">صانع محتوى، متخصص في تقديم محتوى ألعاب الفيديو والرياضات الإلكترونية على
+                    تويتش
+                </p>
+                <p style="color: #ffffff;">و لدي خبرة في عزف على عود</p>
+                <hr style="border: 1px solid #1b160c; width: 90%;">
+            </div>
+            <div class="sub-div">
+                <p style="color: #ffffff;">أسعى إلى تطوير محتوى قناتي ليشمل المزيد من التنوع والتفاعل، مع التركيز
+                    على تقديم تجارب ألعاب مميزة. هدفي هو توسيع نطاق المحتوى ليتضمن تحليل الألعاب، مراجعات عميقة،
+                    والتفاعل المباشر مع المتابعين لتقديم تجربة ممتعة وشاملة.</p>
+                <hr style="border: 1px solid #1b160c; width: 90%;">
+            </div>
+        </div>
+        <div class="testphon">
+            <p>
+                صانع محتوى، متخصص في تقديم محتوى ألعاب الفيديو والرياضات الإلكترونية على
+                تويتش
+            </p>
+        </div>
+    </div>
+
+
+    <div class="Icons">
+        <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href="https://www.snapchat.com/add/yasser_za1?share_id=FaUCZdVGgm0&locale=ar-AE"><i
+                class="fa-brands fa-snapchat"></i></a>
+        <a target="_blank" href="https://www.twitch.tv/al5al_1h"><i class="fa-brands fa-twitch"></i></a>
+    </div>
+
+</body>
+
+</html>

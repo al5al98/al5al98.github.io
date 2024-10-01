@@ -1,0 +1,37 @@
+body {
+  background-color: gray;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.header-title {
+  color: yellow;
+  font-style: italic;
+
+  width: fit-content;
+  opacity: 0.3;
+
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.header-sub-title {
+  color: blue;
+  font-size: 60px;
+}
+
+.bag-image-div {
+  height: auto;
+  text-align: center;
+}
+
+.bag-image-div img {
+  width: 200px;
+}
+
+.bag-image-div p {
+  color: red;
+}
