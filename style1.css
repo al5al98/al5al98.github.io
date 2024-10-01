@@ -52,6 +52,14 @@ h1 {
 
 }
 
+.fa-instagram {
+    color: #9c137f;
+}
+
+.fa-snapchat {
+    color: #e6cd69;
+}
+
 
 /* تنسيق الشعار */
 .logo-container {
@@ -258,8 +266,8 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-    
-    
+
+
     .logo-container {
 
         margin-top: 20px;
@@ -278,7 +286,7 @@ hr {
         color: white;
     }
 
-    .testphon{
+    .testphon {
 
         display: flex;
         padding: 16px;
@@ -288,7 +296,7 @@ hr {
         border-radius: calc(0.5 * var(--m));
         background-color: rgba(51, 49, 49, 0.247);
         box-shadow: 5px 5px 90px 20px rgba(0, 0, 0, 0.8);
-    text-shadow: 3px 5px 3px rgb(2, 1, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.9em rgb(0, 0, 0);
+        text-shadow: 3px 5px 3px rgb(2, 1, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.9em rgb(0, 0, 0);
     }
 
     .main-div {
@@ -299,4 +307,3 @@ hr {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {}
-
